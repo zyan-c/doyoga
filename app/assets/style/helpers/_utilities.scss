@@ -136,6 +136,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true,
       property: width,
       class: w,
       values: (
@@ -444,6 +445,7 @@ $utilities: map-merge(
       property: font-size,
       class: fz,
       values:(
+        3-half: $fz-3-half,
         4: $fz-4,
         5: $fz-5,
         6: $fz-6,

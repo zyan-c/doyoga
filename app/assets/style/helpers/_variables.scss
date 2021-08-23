@@ -258,22 +258,23 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,     //4px
-  2: $spacer * .5,      //8px
-  3: $spacer * .75,     //12px,new
-  4: $spacer,           //16px,new
-  5: $spacer * 1.25,    //20px,new
-  6: $spacer * 1.5,     //24px,new
-  7: $spacer * 1.75,    //28px,new
-  8: $spacer * 2,       //32px,new
-  9: $spacer * 2.25,    //36px,new
-  10: $spacer * 2.5,    //40px,new
-  11: $spacer * 2.75,   //44px,new
-  12: $spacer * 3,      //48px,new
-  14: $spacer * 3.5,    //56px,new
-  16: $spacer * 4,      //64px,new
-  26: $spacer * 6.5,    //104px,new
-  negative-6: $spacer * -1.5,  //-24px,new
+  1: $spacer * .25,           //4px
+  2: $spacer * .5,            //8px
+  3: $spacer * .75,           //12px,new
+  4: $spacer,                 //16px,new
+  5: $spacer * 1.25,          //20px,new
+  6: $spacer * 1.5,           //24px,new
+  7: $spacer * 1.75,          //28px,new
+  7-half: $spacer * 1.875,    //30px,new
+  8: $spacer * 2,             //32px,new
+  9: $spacer * 2.25,          //36px,new
+  10: $spacer * 2.5,          //40px,new
+  11: $spacer * 2.75,         //44px,new
+  12: $spacer * 3,            //48px,new
+  14: $spacer * 3.5,          //56px,new
+  16: $spacer * 4,            //64px,new
+  26: $spacer * 6.5,          //104px,new
+  negative-6: $spacer * -1.5, //-24px,new
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -482,13 +483,14 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // 新增自訂fz
-$fz-4: 1rem !default;      //16px
-$fz-5: 1.25rem !default;   //20px
-$fz-6: 1.5rem !default;    //24px
-$fz-7: 1.75rem !default;   //28px
-$fz-8: 2rem !default;      //32px
-$fz-9: 2.25rem !default;   //36px
-$fz-12: 3rem !default;     //48px
+$fz-3-half:     .875rem !default;   //14px
+$fz-4:          1rem !default;      //16px
+$fz-5:          1.25rem !default;   //20px
+$fz-6:          1.5rem !default;    //24px
+$fz-7:          1.75rem !default;   //28px
+$fz-8:          2rem !default;      //32px
+$fz-9:          2.25rem !default;   //36px
+$fz-12:         3rem !default;     //48px
 // 結束新增自訂fz
 
 // scss-docs-start headings-variables

@@ -1,0 +1,69 @@
+.hero{
+    background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/photo-1612157777902-5382bc6e864b.jpeg");
+    background-position: center bottom;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+    background-attachment: fixed;
+}
+.img-md{
+    // 一定要加w-100！不然sm版會破版
+    width: 100%;
+    height: 420px;
+    @include media-breakpoint-down(md){
+        height: 252px;
+    }
+}
+.teaching{
+    &-img{
+        background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/photo-1540206276207-3af25c08abc4.jpeg");
+        background-position: center bottom;
+        background-size: cover;
+        height: auto;
+        border-radius: 16px;
+    }
+    &-founder{
+        margin-left: -95px;
+    }
+    @include media-breakpoint-down(md){
+        &-founder{
+            margin-left: 0px;
+        }
+    }
+    .founder-img{
+        width: 48px;
+        height: 48px;
+        @include media-breakpoint-up(md){
+            width: 94px;
+            height: 94px;
+        }
+    }
+    .teacher-img{
+        width: 48px;
+        height: 48px;
+        @include media-breakpoint-up(md){
+            width: 68px;
+            height: 68px;
+        }
+    }
+}
+.environment{
+    &-space1{
+        width: 100%;
+        height: 444px;
+        @include media-breakpoint-down(md){
+            height: 266px;
+        }
+        @include media-breakpoint-down(sm){
+            height: 210px;
+        }
+    }
+}
+.scheme{
+    .card-img-top{
+        height: 250px;
+    }
+}
+// 讓 testimonial 的 section 可以右移
+.testimonial{
+    overflow-x: auto;
+}

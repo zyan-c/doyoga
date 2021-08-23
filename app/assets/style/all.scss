@@ -1,6 +1,11 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./helpers/utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//全域宣告&reset
 @import "./helpers/base";
 @import "./helpers/utils";
+
+// pages
+@import "./layout/index";

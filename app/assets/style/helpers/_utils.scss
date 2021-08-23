@@ -4,6 +4,9 @@
 .bg-primary-dark{
     background-color: $primary-dark;
 }
+.bg-white{
+    background-color: #fff;
+}
 .text-white{
     color: #ffffff;
 }
@@ -13,4 +16,17 @@
 // }
 .fz-6{
     font-size: 24px;
+}
+// .h-md-50{
+//     height: 50%;
+// }
+.h-25{
+    height: 25%;
+}
+.max-height-25{
+    max-height: 25%;
+}
+// 待解決顏色 API 後刪除
+.primary-dark{
+    color: $primary-dark;
 }
