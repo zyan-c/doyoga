@@ -1,0 +1,16 @@
+.bg-primary{
+    background-color: $primary;
+}
+.bg-primary-dark{
+    background-color: $primary-dark;
+}
+.text-white{
+    color: #ffffff;
+}
+// bs 的 utilities 有同樣的選擇器
+// .flex-grow-0{
+//     flex-grow: 0;
+// }
+.fz-6{
+    font-size: 24px;
+}

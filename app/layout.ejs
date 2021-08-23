@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <!--  adobe font -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'pdw1yhw',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">  
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo@2x.png" alt="doyoga-logo" width="96px" height="31px">
+        </a>
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">menu</span>
+        </button>
+        <!-- collapse -->
+        <!-- 待確認是否要加justify-content-between -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link text-dark" href="#">課程介紹</a>
+            </li>
+            <li>
+              <a class="nav-link text-dark" href="#">瑜珈空間</a>
+            </li>
+            <li>
+              <a class="nav-link text-dark" href="#">當月課表</a>
+            </li>
+            <!-- <li class="d-flex">
+              <button class="btn btn-outline-primary-dark">立即預約</button>
+              <button class="btn btn-outline-primary-dark ms-lg-2">聯絡我們</button>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav">
+              <li><button class="btn btn-outline-primary-dark rounded-16">立即預約</button></li>
+              <li><button class="btn btn-outline-primary-dark ms-lg-2">聯絡我們</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <%- contents %>
+
+    <!-- footer -->
+    <footer class="py-8 bg-primary-dark text-white">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between">
+          <h3 class="fz-7 fw-medium mb-2">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-4 w-100">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="input user email" aria-describedby="input user email">
+                <button class="btn btn-primary-light input-group-text">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-8">
+      <div class="container mb-md-8">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <a href="./index.html"><img src="./assets/images/logo-white.png" alt="doyoga-logo" width="96px" height="31px"></a>
+          <div class="d-flex">
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-facebook"></i></a>
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-instagram"></i></a>
+            <a class="ms-1" href="#"><i class="fz-6 text-white fab fa-line"></i></a>
+          </div>
+        </div>
+        <ul>
+          <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
+          <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
+          <li>
+            <a class="text-white" href="#">當月課表</a>
+          </li>
+        </ul>
+        <small class="text-md-center d-md-block m-md-negative-6">© 2021. All Rights Reserved.</small>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
+
+
