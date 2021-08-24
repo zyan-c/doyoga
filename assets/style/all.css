@@ -17417,8 +17417,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   max-height: 25%;
 }
 
+.height-250 {
+  height: 250px;
+}
+
 .primary-dark {
   color: #907A7B;
+}
+
+.text-dark {
+  color: #907A7B;
+}
+
+input[type=radio]:checked {
+  border: 1px solid #C0A4A5;
+}
+
+input[type=checkbox]:checked {
+  border: 1px solid #C0A4A5;
 }
 
 .hero {
