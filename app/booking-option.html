@@ -1,0 +1,65 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: booking-option
+---
+<section class="pt-12 pb-22 pt-md-16 pb-md-20 pt-lg-16 pb-lg-26 text-center">
+    <div class="container">
+        <h2 class="fz-7 mb-6 mb-md-4 primary-dark">立即預約</h2>
+        <div class="row mb-8">
+            <div class="col-12 d-flex justify-content-center">
+                <!-- 什麼時候要用純 button 什麼時候要用 button》a？ -->
+            <!-- 待新增 btn-xl，py：12px -->
+            <button class="btn btn-lg rounded-16 btn-primary-dark"><a href="" class="fz-4">選擇方案</a></button>
+            <button class="btn btn-lg rounded-16 btn-primary text-dark mx-7-half"><a href="" class="fz-4">填寫資料</a></button>
+            <button class="btn btn-lg rounded-16 btn-primary text-dark"><a href="" class="fz-4">完成預約</a></button>
+            </div>
+        </div>
+        <div class="row mb-10 mb-md-12 mb-lg-8">
+            <div class="col-12 col-lg-4">
+                <!-- text-md-left 無效？ -->
+                <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center">
+                    <!-- 為什麼 img 加入 height 無效？加入 .h-25 也無效？ 因為base有設定 height：auto，而且 @import 的順序在 utilities 的下面
+                        可是在 utils 加入 .h-25 .max-height-25 的 class 也無效？命名 utils @import 的順序在 base 下面？ -->
+                    <img src="./assets/images/scheme1.jpg" class="card-img-top height-250" alt="option1" height="250px">
+                    <div class="card-body p-6">
+                      <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
+                      <p class="card-text fz-5 mb-2">NT $450 / 次</p>
+                      <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                      <a href="#" class="btn btn-primary-light w-100">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center">
+                    <img src="./assets/images/scheme2.jpg" class="card-img-top height-250" alt="option1" height="250px">
+                    <div class="card-body p-6">
+                      <h5 class="card-title fz-5 mb-1 primary-dark">短期體驗</h5>
+                      <p class="card-text fz-5 mb-2">NT $1800 / 月</p>
+                      <p class="mb-10 text-start">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。。</p>
+                      <a href="#" class="btn btn-primary-light w-100">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card flex-md-row flex-lg-column text-md-start text-lg-center">
+                    <img src="./assets/images/scheme3.jpg" class="card-img-top height-250" alt="option1" height="250px">
+                    <div class="card-body p-6">
+                      <h5 class="card-title fz-5 mb-1 primary-dark">長期體驗</h5>
+                      <p class="card-text fz-5 mb-2">NT $5600 / 季</p>
+                      <p class="mb-10 text-start">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                      <a href="#" class="btn btn-primary-light w-100">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="fz-7 mb-4 primary-dark">預約須知</h3>
+        <ul class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-start">
+            <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+            <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+            <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+            <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+        </ul>
+    </div>
+</section>

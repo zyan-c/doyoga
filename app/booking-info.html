@@ -1,0 +1,85 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: booking-info
+---
+<section class="pt-12 pb-22 pt-md-16 pb-md-20 pt-lg-16 pb-lg-26">
+    <div class="container">
+        <h2 class="fz-7 mb-6 mb-md-4 primary-dark text-center">立即預約</h2>
+        <!-- 按鈕（待優化） -->
+        <div class="row mb-8">
+            <div class="col-12 d-flex justify-content-center">
+                <!-- 什麼時候要用純 button 什麼時候要用 button》a？ -->
+            <!-- 待新增 btn-xl，py：12px -->
+            <button class="btn btn-lg rounded-16 btn-primary-dark"><a href="" class="fz-4">選擇方案</a></button>
+            <button class="btn btn-lg rounded-16 btn-primary text-dark mx-7-half"><a href="" class="fz-4">填寫資料</a></button>
+            <button class="btn btn-lg rounded-16 btn-primary text-dark"><a href="" class="fz-4">完成預約</a></button>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center mb-6 mb-lg-8">
+            <p class="me-4">您選擇的是</p>
+            <h5 class="primary-light">首次體驗課程-基礎</h5>
+        </div>
+        <ul class="row flex-column">
+            <li class="col-12 col-md-6 col-lg-4 mb-8">
+                <p>1. 是否接觸過瑜珈?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input me-8" id="Q1-yes" checked>
+                    <label class="form-check-label" for="Q1-yes">是</label>
+                    <input type="radio" class="form-check-input" id="Q1-no">
+                    <label class="form-check-label" for="Q1-no">否</label>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4 mb-8">
+                <p>2. 想改善的生活問題?</p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input me-8" id="Q2-option1">
+                    <label class="form-check-label" for="Q2-option1">肌耐力不足</label>
+                    <input type="checkbox" class="form-check-input me-8" id="Q2-option2">
+                    <label class="form-check-label" for="Q2-option2">柔軟度不佳</label>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4"></li>
+            <li class="col-12 col-md-6 col-lg-4"></li>
+            <li class="col-12 col-md-6 col-lg-4 mb-8">
+                <p class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+                <!-- 姓名&年齡 -->
+                <div class="d-flex gap-2 mb-4">
+                    <div class="flex-column w-100">
+                        <label for="userName" class="form-label d-block">姓名</label>
+                        <input type="text" class="form-control" id="userName" placeholder="請輸入您的姓名" aria-describedby="userName">
+                    </div>
+                    <div class="flex-column w-100">
+                        <label for="userAge" class="form-label d-block">年齡</label>
+                        <input type="text" class="form-control" id="userAge" placeholder="請輸入您的年齡" aria-describedby="userAge">
+                    </div>
+                </div>
+                <!-- 性別 -->
+                <div class="mb-4">
+                    <!-- select 要搭配什麼？label?p? -->
+                    <label for="" class="form-label d-block">性別</label>
+                    <select class="form-select mb-4" aria-label="select">
+                    <option selected>女</option>
+                    <option value="1">男</option>
+                    <option value="2">中性</option>
+                    <option value="3">一言難盡</option>
+                  </select>
+                </div>
+                <!-- email -->
+                <div class="mb-4">
+                    <label for="userEmail" class="form-label mb-2">電子信箱</label>
+                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="email@example.com">
+                </div>
+                <!-- tel -->
+                <div class="mb-4">
+                    <label for="userPhone" class="form-label mb-2">手機號碼</label>
+                    <input type="tel" class="form-control" id="userPhone" aria-describedby="emailHelp" placeholder="0912-345-678">
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4 mb-8">
+                <button class="btn btn-primary-light w-100">送出</button>
+            </li>
+        </ul>
+    </div>
+</section>

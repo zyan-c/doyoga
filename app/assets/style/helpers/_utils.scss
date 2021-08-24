@@ -26,7 +26,20 @@
 .max-height-25{
     max-height: 25%;
 }
+.height-250{
+    height: 250px;
+}
 // 待解決顏色 API 後刪除
 .primary-dark{
     color: $primary-dark;
 }
+// 待解決顏色 API 後刪除
+.text-dark{
+    color: $primary-dark;
+}
+input[type=radio]:checked {
+    border: 1px solid $primary-light;
+ }
+ input[type=checkbox]:checked {
+    border: 1px solid $primary-light;
+ }

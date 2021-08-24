@@ -1,5 +1,5 @@
 .hero{
-    background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/photo-1612157777902-5382bc6e864b.jpeg");
+    background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/hero-bg.jpeg");
     background-position: center bottom;
     background-size: cover;
     min-height: calc(100vh - 80px);
@@ -15,7 +15,7 @@
 }
 .teaching{
     &-img{
-        background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/photo-1540206276207-3af25c08abc4.jpeg");
+        background-image: url("https://raw.githubusercontent.com/zyan-c/doyoga/master/app/assets/images/teaching.jpeg");
         background-position: center bottom;
         background-size: cover;
         height: auto;
