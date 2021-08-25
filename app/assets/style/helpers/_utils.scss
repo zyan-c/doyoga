@@ -35,3 +35,12 @@ input[type=radio]:checked {
 .img-196{
     height: 196px;
 }
+.map-height{
+    height: 360px;
+    @include media-breakpoint-down(lg){
+        height: 323px;
+    }
+    @include media-breakpoint-down(md){
+        height: 195px;
+    }
+}

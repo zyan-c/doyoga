@@ -3,11 +3,18 @@
     height: 100%;
   }
 
-  .swiper-slide img {
+.swiper-slide .space-intro-img {
     display: block;
     width: 100%;
     // height: 100%;
     height: 196px;
     object-fit: cover;
-    background-color: transparent;
-  }
+    border-radius: 16px;
+}
+
+.swiper-slide .course-teacher-img {
+  display: block;
+  // width: 100%;
+  // height: 196px;
+}
+  

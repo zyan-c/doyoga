@@ -1,4 +1,10 @@
+// 測試 booking-option 首次體驗的 collapse
 .card.selected{
     box-sizing: border-box;
     border: 4px solid $white;
+}
+.card-image{
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
 }
