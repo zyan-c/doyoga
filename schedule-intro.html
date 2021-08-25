@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <!--  adobe font -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'pdw1yhw',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">  
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary py-5">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/logo@2x.png" alt="doyoga-logo" width="96px" height="31px">
+        </a>
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">menu</span>
+        </button>
+        <!-- collapse -->
+        <!-- 待確認是否要加justify-content-between -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link text-text-dark" href="./course-intro.html">課程介紹</a>
+            </li>
+            <li>
+              <a class="nav-link text-text-dark" href="./space-intro.html">瑜珈空間</a>
+            </li>
+            <li>
+              <a class="nav-link text-text-dark" href="./schedule-intro.html">當月課表</a>
+            </li>
+            <!-- <li class="d-flex">
+              <button class="btn btn-outline-primary-dark">立即預約</button>
+              <button class="btn btn-outline-primary-dark ms-lg-2">聯絡我們</button>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav">
+              <li><button class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0">立即預約</button></li>
+              <li><button class="btn btn-outline-primary-dark ms-lg-2 rounded-16 w-100">聯絡我們</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="pt-10 pb-12 pt-mb-8 pb-md-10 pt-lg-10 pb-lg-14 text-primary-dark">
+    <div class="container">
+        <h2 class="fz-7 mb-6 mb-lg-8 text-center">當月課表</h2>
+        <!-- table -->
+        <div class="bg-primary-light py-10 px-12 text-white rounded-16">
+            <h5 class="fw-normal mb-2">2021 07 月</h5>
+            <div class="table-responsive text-nowrap">
+                <table class="table bg-white table-bordered border-primary-light">
+                    <thead>
+                      <tr>
+                        <th scope="col">時間</th>
+                        <th scope="col">星期一</th>
+                        <th scope="col" class="bg-primary">星期二</th>
+                        <th scope="col">星期三</th>
+                        <th scope="col" class="bg-primary">星期四</th>
+                        <th scope="col">星期五</th>
+                        <th scope="col" class="bg-primary">星期六</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">0900-1000</th>
+                        <td>基礎 Basic</td>
+                        <td class="bg-primary">基礎 Basic</td>
+                        <td></td>
+                        <td class="bg-primary"></td>
+                        <td>基礎 Basic</td>
+                        <td class="bg-primary">基礎 Basic</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1000-1100</th>
+                        <td>艾揚格 Iyengar</td>
+                        <td class="bg-primary">哈達 Hatha</td>
+                        <td>寰宇 Universal</td>
+                        <td>哈達 Hatha</td>
+                        <td>艾揚格 Iyengar</td>
+                        <td>雙人飛行</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1100-1200</th>
+                        <td>寰宇 Universal</td>
+                        <td class="bg-primary">陰陽 Yin Yang</td>
+                        <td>艾揚格 Iyengar</td>
+                        <td>寰宇 Universal</td>
+                        <td></td>
+                        <td>艾揚格 Iyengar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1200-1400</th>
+                        <td colspan="6" class="text-center">休息</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1400-1500</th>
+                        <td>雙人飛行</td>
+                        <td class="bg-primary">基礎 Basic</td>
+                        <td>雙人飛行</td>
+                        <td>陰陽 Yin Yang</td>
+                        <td>雙人飛行</td>
+                        <td>基礎 Basic</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1500-1600</th>
+                        <td>基礎 Basic</td>
+                        <td class="bg-primary">基礎 Basic</td>
+                        <td>哈達 Hatha</td>
+                        <td class="bg-primary"></td>
+                        <td>基礎 Basic</td>
+                        <td class="bg-primary">基礎 Basic</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1600-1700</th>
+                        <td>艾揚格 Iyengar</td>
+                        <td class="bg-primary">哈達 Hatha</td>
+                        <td>寰宇 Universal</td>
+                        <td class="bg-primary">哈達 Hatha</td>
+                        <td>艾揚格 Iyengar</td>
+                        <td class="bg-primary">雙人飛行</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1700-1800</th>
+                        <td>寰宇 Universal</td>
+                        <td class="bg-primary">陰陽 Yin Yang</td>
+                        <td>艾揚格 Iyengar</td>
+                        <td class="bg-primary">寰宇 Universal</td>
+                        <td>香氛瑜珈</td>
+                        <td class="bg-primary">艾揚格 Iyengar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1800-2000</th>
+                        <td colspan="6" class="text-center">休息</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2000-2100</th>
+                        <td></td>
+                        <td class="bg-primary"></td>
+                        <td>寰宇 Universal</td>
+                        <td class="bg-primary">哈達 Hatha</td>
+                        <td>艾揚格 Iyengar</td>
+                        <td class="bg-primary">雙人飛行</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 上課須知 -->
+<section class="pb-22 pb-md-20 pb-lg-26 text-text-dark">
+    <div class="container">
+        <h2 class="fz-7 mb-6 mb-lg-8 text-center">上課須知</h2>
+            <div class=" justify-content-center">
+                <ul class="row">
+                    <li class="mb-4 mb-md-6 col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-3">
+                        <div class="d-flex align-items-center">
+                            <p class="fz-8 fw-bold me-3">1.</p>
+                            <div class="card py-4 px-3 px-lg-6 border-1 w-100 w-lg-auto">空中瑜珈、香氛開放 2 天前電話預約上課。</div>
+                        </div>
+                    </li>
+                    <li class="mb-4 mb-md-6 col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-4">
+                        <div class="d-flex align-items-center">
+                            <p class="fz-8 fw-bold me-3">2.</p>
+                            <div class="card py-4 px-3 px-lg-6 bg-primary-dark text-white w-100 w-lg-auto">如果有特殊體質、特殊狀況，請主動告知該堂教師。</div>
+                        </div>
+                    </li>
+                    <li class="mb-4 mb-md-6 col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-3">
+                        <div class="d-flex align-items-center">
+                            <p class="fz-8 fw-bold me-3">3.</p>
+                            <div class="card py-4 px-3 px-lg-6 border-1 w-100 w-lg-auto">取消預約或時間異動請於預約日前一天晚間 21:00 前告知。</div>
+                        </div>
+                    </li>
+                    <li class="mb-4 mb-md-6 col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-4">
+                        <div class="d-flex align-items-center">
+                            <p class="fz-8 fw-bold me-3">4.</p>
+                            <div class="card py-4 px-3 px-lg-6 bg-primary-dark text-white w-100 w-lg-auto">運動過程中若感到任何不適，請馬上停止且與老師商量討論。</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</section>
+
+    <!-- footer -->
+    <footer class="py-8 bg-primary-dark text-white">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
+          <h3 class="fz-7 fw-medium mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-4 w-100">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="input user email" aria-describedby="input user email">
+                <button class="btn btn-primary-light input-group-text">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-8">
+      <div class="container mb-md-8">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <a href="./index.html"><img src="./assets/images/logo-white.png" alt="doyoga-logo" width="96px" height="31px"></a>
+          <div class="d-flex">
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-facebook"></i></a>
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-instagram"></i></a>
+            <a class="ms-1" href="#"><i class="fz-6 text-white fab fa-line"></i></a>
+          </div>
+        </div>
+        <ul>
+          <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
+          <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
+          <li>
+            <a class="text-white" href="#">當月課表</a>
+          </li>
+        </ul>
+        <small class="text-md-center d-md-block m-md-negative-6">© 2021. All Rights Reserved.</small>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
+
+
