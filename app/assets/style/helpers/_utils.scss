@@ -1,25 +1,12 @@
-.bg-primary{
-    background-color: $primary;
-}
-.bg-primary-dark{
-    background-color: $primary-dark;
-}
-.bg-white{
-    background-color: #fff;
-}
-.text-white{
-    color: #ffffff;
-}
 // bs 的 utilities 有同樣的選擇器
 // .flex-grow-0{
 //     flex-grow: 0;
 // }
-.fz-6{
-    font-size: 24px;
-}
+
 // .h-md-50{
 //     height: 50%;
 // }
+
 .h-25{
     height: 25%;
 }
@@ -29,13 +16,10 @@
 .height-250{
     height: 250px;
 }
-// 待解決顏色 API 後刪除
-.primary-dark{
-    color: $primary-dark;
-}
-// 待解決顏色 API 後刪除
-.text-dark{
-    color: $primary-dark;
+// form
+.form-check{
+    display: inline-block;
+    // margin-right: 32px;
 }
 input[type=radio]:checked {
     border: 1px solid $primary-light;
@@ -43,3 +27,11 @@ input[type=radio]:checked {
  input[type=checkbox]:checked {
     border: 1px solid $primary-light;
  }
+// img
+.object-fit-contain{
+    object-fit: contain;
+}
+// 待新增圖片高度 map-merge 後刪除，也從 course-intro 內刪除
+.img-196{
+    height: 196px;
+}

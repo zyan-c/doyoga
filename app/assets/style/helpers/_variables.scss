@@ -3,6 +3,16 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+//新增圖片寫死高度變數
+$img-196: 12.25rem !default;
+//新增圖片寫死高度變數結束
+
+//新增圖片寫死高度map-merge
+$imgSizes: (
+  "196": $img-196,
+) !default;
+//新增圖片寫死高度map-merge結束
+
 // Color system
 
 // scss-docs-start gray-color-variables
@@ -276,6 +286,7 @@ $spacers: (
   20: $spacer * 5,            //80px,new
   22: $spacer * 5.5,          //88px,new
   26: $spacer * 6.5,          //104px,new
+  28: $spacer * 7,            //112px,new
   negative-6: $spacer * -1.5, //-24px,new
 ) !default;
 
@@ -289,6 +300,9 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  15: 15%,
+  20: 20%,
+  25: 25%,
   50: 50%,
   100: 100%
 ) !default;

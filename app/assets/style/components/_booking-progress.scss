@@ -1,0 +1,7 @@
+.booking{
+    & .active{
+        background-color: $primary-dark;
+        color: $white;
+        border-radius: 16px;
+    }
+}

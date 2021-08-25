@@ -7,5 +7,10 @@
 @import "./helpers/base";
 @import "./helpers/utils";
 
+//元件
+@import "./components/card";
+@import "./components/booking-progress";
+@import "./components/swiper";
+
 // pages
 @import "./layout/index";
