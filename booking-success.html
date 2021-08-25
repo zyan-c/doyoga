@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <!--  adobe font -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'pdw1yhw',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">  
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary py-5">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/logo@2x.png" alt="doyoga-logo" width="96px" height="31px">
+        </a>
+        <!-- 漢堡選單 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">menu</span>
+        </button>
+        <!-- collapse -->
+        <!-- 待確認是否要加justify-content-between -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link text-text-dark" href="./course-intro.html">課程介紹</a>
+            </li>
+            <li>
+              <a class="nav-link text-text-dark" href="#">瑜珈空間</a>
+            </li>
+            <li>
+              <a class="nav-link text-text-dark" href="#">當月課表</a>
+            </li>
+            <!-- <li class="d-flex">
+              <button class="btn btn-outline-primary-dark">立即預約</button>
+              <button class="btn btn-outline-primary-dark ms-lg-2">聯絡我們</button>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav">
+              <li><button class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0">立即預約</button></li>
+              <li><button class="btn btn-outline-primary-dark ms-lg-2 rounded-16 w-100">聯絡我們</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="pt-12 pb-22 pt-md-16 pb-md-20 pt-lg-16 pb-lg-26 text-center">
+    <div class="container">
+        <h2 class="fz-7 mb-6 mb-md-4 text-primary-dark">立即預約</h2>
+        <ul class="booking row g-0 gap-4 gap-md-7-half mb-8 justify-content-md-center">
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="./booking-option.html" class="py-3 px-5 text-primary-dark">選擇方案</a></li>
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="./booking-info.html" class="py-3 px-5 text-primary-dark">填寫資料</a></li>
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="./booking-success.html" class="py-3 px-5 active">完成預約</a></li>
+        </ul>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <span class="material-icons fz-12 mb-4 mb-md-5 text-primary-dark">check_circle_outline</span>
+                <h5 class="fw-normal mb-8 text-primary-dark">已完成預約，以下是您的預約資訊:</h5>
+                <!-- 卡片 -->
+                <div class="card text-primary-dark text-start mb-6">
+                    <div class="card-header bg-primary-dark text-white py-3 px-5 d-flex justify-content-between"> 
+                        <p>預約資訊</p>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="me-2">您預約的是</p>
+                            <h5 class="fw-light text-primary-light">首次體驗課程-基礎</h5>
+                        </div>
+                        <ul>
+                          <li class="mb-2">上課預約報到日：2021/07/21</li>
+                          <li class="mb-2">預約人：Joanne Chen</li>
+                          <li class="mb-2">年齡：18 歲</li>
+                          <li class="mb-2">性別：女</li>
+                          <li class="mb-2">電子信箱：example123@gmail.com</li>
+                          <li class="mb-2">手機號碼：0912-345-678</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="row text-primary-dark justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- 上課注意事項 -->
+                    <h5 class="fw-normal mb-2">上課注意事項</h5>
+                    <p class="text-start mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+                    <button class="btn btn-primary-light btn-lg w-100"><a href="./index.html" class="fz-4">返回首頁</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- footer -->
+    <footer class="py-8 bg-primary-dark text-white">
+      <div class="container">
+        <div class="d-lg-flex justify-content-between align-items-center">
+          <h3 class="fz-7 fw-medium mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h3>
+          <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-4 w-100">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="input user email" aria-describedby="input user email">
+                <button class="btn btn-primary-light input-group-text">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-8">
+      <div class="container mb-md-8">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <a href="./index.html"><img src="./assets/images/logo-white.png" alt="doyoga-logo" width="96px" height="31px"></a>
+          <div class="d-flex">
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-facebook"></i></a>
+            <a class="ms-1 me-1" href="#"><i class="fz-6 text-white fab fa-instagram"></i></a>
+            <a class="ms-1" href="#"><i class="fz-6 text-white fab fa-line"></i></a>
+          </div>
+        </div>
+        <ul>
+          <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
+          <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
+          <li>
+            <a class="text-white" href="#">當月課表</a>
+          </li>
+        </ul>
+        <small class="text-md-center d-md-block m-md-negative-6">© 2021. All Rights Reserved.</small>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
+
+

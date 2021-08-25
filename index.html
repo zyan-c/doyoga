@@ -19,6 +19,11 @@
     </script>
     <!-- material icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">  
   </head>
@@ -40,13 +45,13 @@
         <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
           <ul class="navbar-nav">
             <li>
-              <a class="nav-link text-dark" href="#">課程介紹</a>
+              <a class="nav-link text-text-dark" href="./course-intro.html">課程介紹</a>
             </li>
             <li>
-              <a class="nav-link text-dark" href="#">瑜珈空間</a>
+              <a class="nav-link text-text-dark" href="#">瑜珈空間</a>
             </li>
             <li>
-              <a class="nav-link text-dark" href="#">當月課表</a>
+              <a class="nav-link text-text-dark" href="#">當月課表</a>
             </li>
             <!-- <li class="d-flex">
               <button class="btn btn-outline-primary-dark">立即預約</button>
@@ -65,15 +70,19 @@
 <section class="hero d-flex align-items-center">
     <div class="container">
         <!-- 為什麼 text-dark 無效？ -->
-        <div class="row text-dark">
+        <div class="row text-text-dark">
             <div class="col-12 col-md-8 col-lg-5 offset-lg-1">
                 <p>健身輕時尚</p>
                 <h1 class="fz-9">DOYOGA，做你的瑜珈</h1>
                 <h2 class="mb-4 fz-6">多給自己一點時間享受靜謐，傾聽內心的聲音。</h2>
                 <div class="d-flex">
                     <!-- 為什麼 fz-sm-4 無效？ -->
-                    <button class="btn btn-primary btn-lg fz-sm-4">立即預約</button>
-                    <button class="btn btn-primary-light btn-lg ms-2 fz-sm-4">課程介紹</button>
+                    <button class="btn btn-primary btn-lg">
+                        <a href="./booking-option.html" class="text-text-dark fz-4">立即預約</a>
+                    </button>
+                    <button class="btn btn-primary-light btn-lg ms-2">
+                        <a href="#" class="fz-4">課程介紹</a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -81,10 +90,10 @@
 </section>
 
 <!-- 感受身心，活在當下 -->
-<section class="pt-8 pb-12 pt-lg-10 pb-lg-16 primary-dark text-center">
+<section class="pt-8 pb-12 pt-lg-10 pb-lg-16 text-primary-dark text-center">
     <div class="container">
         <h2 class="fz-7 mb-1">感受身心，活在當下</h2>
-        <p class="primary-light mb-6 mb-lg-8 fz-5">DOYOGA 可以帶給你...</p>
+        <p class="text-primary-light mb-6 mb-lg-8 fz-5">DOYOGA 可以帶給你...</p>
         <div class="row">
             <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <!-- 如何在 lg 版 img 呈現 350*420，md呈現210*252，sm呈現345*420？ -->
@@ -119,20 +128,20 @@
 </section>
 
 <!-- 頂尖師資、專業教學 -->
-<section class="teaching pt-8 pb-12 py-lg-16 bg-primary">
+<section class="teaching pt-8 pb-12 py-lg-16 bg-primary text-primary-dark">
     <div class="container">
         <div class="row">
             <div class="d-none d-lg-block col-lg-6 teaching-img"></div>
             <!-- for md's h2+p only -->
             <h2 class="text-center d-none d-md-block d-lg-none fz-7 mb-1">頂尖師資、專業教學</h2>
-            <p class="primary-light d-none d-md-block col-md-8 offset-md-2 d-lg-none fz-5 mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
+            <p class="text-primary-light d-none d-md-block col-md-8 offset-md-2 d-lg-none fz-5 mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
             <div class="col-12 col-md-10 offset-md-2 col-lg-6 offset-lg-0">
                 <h2 class="mt-lg-7 text-center text-lg-start d-md-none d-lg-block fz-7 mb-1">頂尖師資、專業教學</h2>
-                <p class="primary-light mb-6 mb-lg-8 d-md-none d-lg-block fz-5 mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
+                <p class="text-primary-light mb-6 mb-lg-8 d-md-none d-lg-block fz-5 mb-6">強力師資，經歷豐富，協會認證。運用引導式教學，針對不同需求的人制定專屬課程。</p>
                  <!-- 如何在 sm 版圖片變 48*48？ -->
                  <div class="teaching-founder p-4 py-md-10 px-md-12 bg-white rounded-16 mb-4 d-flex align-items-center">
                     <img class="founder-img me-5" src="./assets/images/teacher-1.png" alt="teacher Carol">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column text-text-dark">
                         <h5 class="mb-1">Carol Tang 老師</h5>
                         <p>教學經歷 10 年</p>
                         <p>瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。</p>
@@ -140,14 +149,14 @@
                  </div>
                  <div class="p-4 py-md-6 px-md-8 bg-white rounded-16 mb-4 d-flex align-items-center">
                     <img class="teacher-img me-5" src="./assets/images/teacher-2.png" alt="teacher Kanae">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column text-text-dark">
                         <h5>Kanae 老師</h5>
                         <p>教學經歷 10 年</p>
                     </div>
                  </div>
                  <div class="p-4 py-md-6 px-md-8 bg-white rounded-16 mb-4 d-flex align-items-center">
                     <img class="teacher-img me-5" src="./assets/images/teacher-3.png" alt="teacher Ifrit">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column text-text-dark">
                         <h5>Asa Ifrit 老師</h5>
                         <p>教學經歷 10 年</p>
                     </div>
@@ -158,11 +167,11 @@
 </section>
 
 <!-- 舒適空間、靜心放鬆 -->
-<section class="environment py-12 py-md-14 py-lg-16">
+<section class="environment py-12 py-md-14 py-lg-16 text-primary-dark">
     <div class="container">
         <div class="row">
             <div class="col-6 col-md-4">
-                <img class="environment-space1 rounded-16" src="./assets/images/space1.jpg" alt="space1">
+                <img class="environment-space1 rounded-16" src="./assets/images/course8.jpg" alt="space1">
             </div>
             <div class="col-6 col-md-2 d-md-flex flex-column gap-md-7 gap-lg-4">
                 <!-- 如何新增 h-md-50？在utils新增.h-md-50無效，權重不比 h-100 高 -->
@@ -172,30 +181,30 @@
             </div>
             <div class="col-12 col-md-6 order-first order-md-0 mb-4 mb-md-0 d-flex flex-column justify-content-center">
                 <h2 class="fz-7 mb-1">舒適空間、靜心放鬆</h2>
-                <p class="fz-5 mb-4">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
-                <a href="#" class="primary-dark">環境介紹<span class="material-icons ms-2 align-middle">arrow_right_alt</span></a>
+                <p class="fz-5 mb-4 text-primary-light">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
+                <a href="#" class="text-primary-dark">環境介紹<span class="material-icons ms-2 align-middle">arrow_right_alt</span></a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- 方案選擇 -->
-<section class="scheme pt-8 pb-12 pt-md-10 pb-md-14 pb-lg-16 text-center primary-light">
+<section class="scheme pt-8 pb-12 pt-md-10 pb-md-14 pb-lg-16 text-center primary-light text-primary-dark">
     <div class="container">
-        <h2 class="fz-7 mb-1 primary-dark">方案選擇</h2>
-        <p class="mb-6 mb-lg-8 fz-5">DOYOGA 可以帶給你...</p>
+        <h2 class="fz-7 mb-1">方案選擇</h2>
+        <p class="mb-6 mb-lg-8 fz-5 text-primary-light">DOYOGA 可以帶給你...</p>
         <div class="row">
             <div class="col-12 col-lg-4">
                 <!-- text-md-left 無效？ -->
                 <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center">
                     <!-- 為什麼 img 加入 height 無效？加入 .h-25 也無效？ 因為base有設定 height：auto，而且 @import 的順序在 utilities 的下面
                         可是在 utils 加入 .h-25 .max-height-25 的 class 也無效？命名 utils @import 的順序在 base 下面？ -->
-                    <img src="./assets/images/scheme1.jpg" class="card-img-top" alt="option1" height="250px">
+                    <img src="./assets/images/course4.jpg" class="card-img-top" alt="option1" height="250px">
                     <div class="card-body p-6">
                       <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
-                      <p class="card-text fz-5 mb-2">NT $450 / 次</p>
+                      <p class="card-text fz-5 mb-2 text-primary-light">NT $450 / 次</p>
                       <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                      <a href="./booking-option.html" class="btn btn-primary-light w-100">選擇課程</a>
+                      <a href="./booking-option.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
                     </div>
                 </div>
             </div>
@@ -204,9 +213,9 @@
                     <img src="./assets/images/scheme2.jpg" class="card-img-top" alt="option1" height="250px">
                     <div class="card-body p-6">
                       <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
-                      <p class="card-text fz-5 mb-2">NT $450 / 次</p>
+                      <p class="card-text fz-5 mb-2 text-primary-light">NT $450 / 次</p>
                       <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                      <a href="./booking-option.html" class="btn btn-primary-light w-100">選擇課程</a>
+                      <a href="./booking-option.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
                     </div>
                 </div>
             </div>
@@ -215,9 +224,9 @@
                     <img src="./assets/images/scheme3.jpg" class="card-img-top" alt="option1" height="250px">
                     <div class="card-body p-6">
                       <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
-                      <p class="card-text fz-5 mb-2">NT $450 / 次</p>
+                      <p class="card-text fz-5 mb-2 text-primary-light">NT $450 / 次</p>
                       <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                      <a href="./booking-option.html" class="btn btn-primary-light w-100">選擇課程</a>
+                      <a href="./booking-option.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
                     </div>
                 </div>
             </div>
@@ -226,13 +235,13 @@
 </section>
 
 <!-- testimonial -->
-<section class="testimonial pt-8 pb-14 pt-md-10 pb-md-16 bg-primary text-center">
+<section class="testimonial pt-8 pb-14 pt-md-10 pb-md-16 bg-primary text-center text-primary-dark">
     <div class="container">
         <h2 class="fz-7 mb-6 mb-md-8 primary-dark">聽聽他們怎麼說</h2>
         <ul class="testimonial-list row g-0 gap-md-7-half flex-md-nowrap mb-4">
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
                 <!-- 為什麼圖片會被裁切... -->
-                <img class="me-4" src="./assets/images/user-1.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-1.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
@@ -248,7 +257,7 @@
                     <p>服務很好、設備優良！</p>
             </li>
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
-                <img class="me-4" src="./assets/images/user-2.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-2.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
@@ -264,13 +273,13 @@
                     <p>服務很好、設備優良！</p>
             </li>
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
-                <img class="me-4" src="./assets/images/user-3.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-3.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
                         <p class="text-muted fz-3-half">Oct 17 2020</p>
                     </div>
-                    <div class="d-flex mb-2">
+                    <div class="d-flex mb-2 text-primary-light">
                         <span class="material-icons">star_rate</span>
                         <span class="material-icons ms-1">star_rate</span>
                         <span class="material-icons ms-1">star_rate</span>
@@ -288,7 +297,7 @@
         </div>
         <ul class="testimonial-list row g-0 gap-md-7-half flex-md-nowrap">
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
-                <img class="me-4" src="./assets/images/user-4.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-4.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
@@ -304,7 +313,7 @@
                     <p>服務很好、設備優良！</p>
             </li>
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
-                <img class="me-4" src="./assets/images/user-5.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-5.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
@@ -320,7 +329,7 @@
                     <p>服務很好、設備優良！</p>
             </li>
             <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 py-7 px-4 bg-white rounded-16 d-flex">
-                <img class="me-4" src="./assets/images/user-6.png" alt="user">
+                <img class="me-4 object-fit-contain" src="./assets/images/user-6.png" alt="user">
                 <div class="card-content d-flex flex-column">
                     <div class="d-flex mb-2 align-items-center">
                         <p class="me-2">Joanne</p>
@@ -342,8 +351,8 @@
     <!-- footer -->
     <footer class="py-8 bg-primary-dark text-white">
       <div class="container">
-        <div class="d-lg-flex justify-content-between">
-          <h3 class="fz-7 fw-medium mb-2">現在訂閱，獲得課程優惠碼！</h3>
+        <div class="d-lg-flex justify-content-between align-items-center">
+          <h3 class="fz-7 fw-medium mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h3>
           <div class="row g-0">
             <div class="col-12 col-md-6 col-lg-4 w-100">
               <div class="input-group">
