@@ -9,8 +9,12 @@
     // 一定要加w-100！不然sm版會破版
     width: 100%;
     height: 420px;
-    @include media-breakpoint-down(md){
+    // 設定 down(lg) 是 991px～ 為252px
+    @include media-breakpoint-down(lg){
         height: 252px;
+    }
+    @include media-breakpoint-down(md){
+        height: 420px;
     }
 }
 .teaching{
