@@ -3,15 +3,49 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-//新增圖片寫死高度變數
-$img-196: 12.25rem !default;
-//新增圖片寫死高度變數結束
+//嘗試新增圖片寫死高度的變數
+$height-48: 3rem !default;
+$height-94: 5.875rem !default;
+$height-150: 9.375rem !default;
+$height-165: 10.3125rem !default;
+$height-196: 12.25rem !default;
+$height-210: 13.125rem !default;
+$height-216: 13.5rem !default;
+$height-218: 13.625rem !default;
+$height-252: 15.75rem !default;
+$height-266: 16.625rem !default;
+$height-323: 20.1875rem !default;
+$height-341: 21.3125rem !default;
+$height-350: 21.875rem !default;
+$height-360: 22.5rem !default;
+$height-418: 26.125rem !default;
+$height-420: 26.25rem !default;
+$height-444: 27.75rem !default;
+$height-628: 39.25rem !default;
+//嘗試新增圖片寫死高度的變數結束
 
-//新增圖片寫死高度map-merge
+//嘗試新增圖片寫死高度的map
 $imgSizes: (
-  "196": $img-196,
+  "48": $height-48,
+  "94": $height-94,
+  "150": $height-150,
+  "165": $height-165,
+  "196": $height-196,
+  "210": $height-210,
+  "216": $height-216,
+  "218": $height-218,
+  "252": $height-252,
+  "266": $height-266,
+  "323": $height-323,
+  "341": $height-341,
+  "350": $height-350,
+  "360": $height-360,
+  "418": $height-418,
+  "420": $height-420,
+  "444": $height-444,
+  "628": $height-628,
 ) !default;
-//新增圖片寫死高度map-merge結束
+//嘗試新增圖片寫死高度的map結束
 
 // Color system
 
