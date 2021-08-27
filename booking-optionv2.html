@@ -66,58 +66,34 @@
       </div>
     </nav>
     
-    <section class="pt-10 pb-12 pt-mb-8 pb-md-10 pt-lg-10 pb-lg-14 text-primary-dark">
+    <section class="pt-12 pb-22 pt-md-16 pb-md-20 pt-lg-16 pb-lg-26 text-center">
     <div class="container">
-        <h1 class="fz-7 mb-6 mb-lg-8 text-center">聯絡我們</h2>
-        <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-0">
-                <!-- googlemap -->
-                <iframe class="mb-4 mb-md-6 rounded-16 map-height w-100" frameborder="0" scrolling="no" loading="lazy" marginheight="0" marginwidth="0" allowfullscreen="" src="https://maps.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%8D%97%E4%BA%AC%E6%9D%B1%E8%B7%AF%E4%BA%8C%E6%AE%B525%E8%99%9F&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
-                </iframe>
-                <!-- 位置說明 -->
-                <div class="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-0">
-                    <h2 class="fw-normal fz-6 mb-2">DOYOGA 教室位置</h2>
-                    <p class="mb-2">高雄市苓雅區北信街 23 號 2 樓</p>
-                    <ul>如何前往：
-                        <li class="mb-6">1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
-                        <li class="mb-6">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
-                        <li class="mb-6">3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- form -->
-            <div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0">
-                <div class="bg-primary p-8 rounded-16">
-                    <h5 class="fw-normal mb-4 mb-md-6">意見回饋&問題詢問</h5>
-                    <form>
-                        <ul>
-                            <li class="mb-4">
-                                <label for="userName" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="userName" placeholder="請輸入您的姓名" aria-describedby="userName">
-                            </li>
-                            <li class="mb-4">
-                                <label for="userEmail" class="form-label">電子信箱</label>
-                                <input type="email" class="form-control" id="userEmail" placeholder="email@example.com" aria-describedby="emailHelp">
-                            </li>
-                            <li class="mb-4">
-                                <label for="userTel" class="form-label">手機號碼</label>
-                                <input type="tel" class="form-control" id="userTel" placeholder="0912-345-678" aria-describedby="userTel">
-                            </li>
-                            <!-- 如何讓 textarea 的 border 淺一點？ -->
-                            <li class="mb-4">
-                                <label for="userFeedback" class="form-label">意見回饋</label>
-                                <textarea name="userFeedback" id="userFeedback" cols="30" rows="10" class="w-100"></textarea>
-                            </li>
-                            <a href=""></a>
-                        </ul>
-                    </form>
+        <h2 class="fz-7 mb-6 mb-md-4 text-primary-dark">立即預約</h2>
+        <!-- 待確認是否要刪除 .booking -->
+        <ul class="booking row g-0 gap-4 gap-md-7-half mb-8 justify-content-md-center">
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="#" class="py-3 px-5 active">選擇方案</a></li>
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="./booking-info.html" class="py-3 px-5 text-primary-dark">填寫資料</a></li>
+            <li class="col col-md-2 rounded-16 bg-primary"><a href="./booking-success.html" class="py-3 px-5 text-primary-dark">完成預約</a></li>
+        </ul>
+        <div class="row mb-10 mb-md-12 mb-lg-8 text-primary-dark">
+            <div class="col-12 col-lg-4">
+                <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center">
+                    <!-- 卡片圖片 -->
+                    <div class="ratio ratio-16x9">
+                        <img src="./assets/images/course4.jpg" class="rounded-top rounded-start-md rounded-top-lg w-100" alt="option1">
+                    </div>
+                    <!-- 卡片文字 -->
+                    <div class="card-body p-6">
+                        <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
+                        <p class="card-text fz-5 text-primary-light mb-2">NT $450 / 次</p>
+                        <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                        <a href="#classLevel" class="btn text-white btn-primary-light w-100 stretched-link" data-bs-toggle="collapse" role="button" aria-controls="classLevel" aria-expended="false">選擇課程</a>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 
     <!-- footer -->
     <footer class="py-8 bg-primary-dark text-white">

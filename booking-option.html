@@ -79,6 +79,7 @@
                 <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center">
                     <!-- 為什麼 img 加入 height 無效？加入 .h-25 也無效？ 因為base有設定 height：auto，而且 @import 的順序在 utilities 的下面
                         可是在 utils 加入 .h-25 .max-height-25 的 class 也無效？命名 utils @import 的順序在 base 下面？ -->
+                    <!-- 8/27更：圖片外層用ratio-16x9包起來就解決圖片寬高問題了，也可以刪掉 _utils 內 height-250 的 class -->
                     <img src="./assets/images/course4.jpg" class="card-img-top height-250" alt="option1" height="250px">
                     <div class="card-body p-6">
                       <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
@@ -227,11 +228,9 @@
           </div>
         </div>
         <ul>
-          <li class="mb-2"><a class="text-white" href="#">課程介紹</a></li>
-          <li class="mb-2"><a class="text-white" href="#">瑜珈空間</a></li>
-          <li>
-            <a class="text-white" href="#">當月課表</a>
-          </li>
+          <li class="mb-2"><a class="text-white" href="./course-intro.html">課程介紹</a></li>
+          <li class="mb-2"><a class="text-white" href="./space-intro.html">瑜珈空間</a></li>
+          <li><a class="text-white" href="./schedule-intro.html">當月課表</a></li>
         </ul>
         <small class="text-md-center d-md-block m-md-negative-6">© 2021. All Rights Reserved.</small>
       </div>

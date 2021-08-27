@@ -31,7 +31,8 @@ var courseIntroSwiper = new Swiper(".course-intro-swiper", {
     }
   },
   centeredSlides: false
-});
+}); // 主頁
+
 var indexLgCourseSwiper = new Swiper(".index-lg-course-swiper", {
   slidesPerView: 1.2,
   spaceBetween: 30,

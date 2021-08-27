@@ -10869,8 +10869,8 @@ fieldset:disabled .btn {
 }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
 
 .rounded-end {
@@ -10884,8 +10884,8 @@ fieldset:disabled .btn {
 }
 
 .rounded-start {
-  border-bottom-left-radius: 0.25rem !important;
-  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 1rem !important;
+  border-top-left-radius: 1rem !important;
 }
 
 .visible {
@@ -12255,6 +12255,14 @@ fieldset:disabled .btn {
   .text-sm-center {
     text-align: center !important;
   }
+  .rounded-top-sm {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .rounded-start-sm {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+  }
   .fz-sm-3-half {
     font-size: 0.875rem !important;
   }
@@ -13607,6 +13615,14 @@ fieldset:disabled .btn {
   }
   .text-md-center {
     text-align: center !important;
+  }
+  .rounded-top-md {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .rounded-start-md {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
   }
   .fz-md-3-half {
     font-size: 0.875rem !important;
@@ -14961,6 +14977,14 @@ fieldset:disabled .btn {
   .text-lg-center {
     text-align: center !important;
   }
+  .rounded-top-lg {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .rounded-start-lg {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+  }
   .fz-lg-3-half {
     font-size: 0.875rem !important;
   }
@@ -16313,6 +16337,14 @@ fieldset:disabled .btn {
   }
   .text-xl-center {
     text-align: center !important;
+  }
+  .rounded-top-xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .rounded-start-xl {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
   }
   .fz-xl-3-half {
     font-size: 0.875rem !important;
@@ -17667,6 +17699,14 @@ fieldset:disabled .btn {
   .text-xxl-center {
     text-align: center !important;
   }
+  .rounded-top-xxl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .rounded-start-xxl {
+    border-bottom-left-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+  }
   .fz-xxl-3-half {
     font-size: 0.875rem !important;
   }
@@ -17887,6 +17927,10 @@ input[type=checkbox]:checked {
   }
 }
 
+.m--40 {
+  margin-top: -40px;
+}
+
 @media (max-width: 991.98px) {
   .ratio-4x3 {
     --bs-aspect-ratio: 100%;
@@ -17923,6 +17967,10 @@ input[type=checkbox]:checked {
   height: 100%;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
 .swiper-slide .space-intro-img {
   display: block;
   width: 100%;
@@ -17930,10 +17978,6 @@ input[type=checkbox]:checked {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
-}
-
-.swiper-slide .course-teacher-img {
-  display: block;
 }
 
 .modal-width {
