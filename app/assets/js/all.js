@@ -30,3 +30,9 @@ var courseIntroSwiper = new Swiper(".course-intro-swiper", {
   },
   centeredSlides: false,
 });
+
+var indexLgCourseSwiper = new Swiper(".index-lg-course-swiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 30,
+  centeredSlides: false,
+});
