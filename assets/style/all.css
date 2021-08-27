@@ -17887,6 +17887,18 @@ input[type=checkbox]:checked {
   }
 }
 
+@media (max-width: 991.98px) {
+  .ratio-4x3 {
+    --bs-aspect-ratio: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ratio-4x3 {
+    --bs-aspect-ratio: 50%;
+  }
+}
+
 .card.selected {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17922,6 +17934,22 @@ input[type=checkbox]:checked {
 
 .swiper-slide .course-teacher-img {
   display: block;
+}
+
+.modal-width {
+  max-width: 920px;
+}
+
+@media (max-width: 991.98px) {
+  .modal-width {
+    max-width: 690px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .modal-width {
+    max-width: 345px;
+  }
 }
 
 .hero {
