@@ -1,0 +1,10 @@
+.ratio-4x3 {
+    // 看不懂為什麼是 100% @@
+    @include media-breakpoint-down(lg) {
+      --bs-aspect-ratio: 100%;
+    }
+    @include media-breakpoint-down(md) {
+        --bs-aspect-ratio: 50%; 
+      }
+  }
+  

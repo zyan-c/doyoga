@@ -1,5 +1,5 @@
-// swiper
-var swiper = new Swiper(".mySwiper", {
+//space-intro.html 課程推薦
+var spaceIntroSwiper= new Swiper(".space-intro-swiper", {
   slidesPerView: 1.5,
   spaceBetween: 30,
   breakpoints: {
@@ -13,9 +13,20 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
   centeredSlides: false,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
-
+//course-intro.html 師資介紹
+var courseIntroSwiper = new Swiper(".course-intro-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,  
+  breakpoints: {
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3.1,
+      spaceBetween: 30,
+    },
+  },
+  centeredSlides: false,
+});

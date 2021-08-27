@@ -6,11 +6,13 @@
 //全域宣告&reset
 @import "./helpers/base";
 @import "./helpers/utils";
+@import "./helpers/ratio";
 
 //元件
 @import "./components/card";
 @import "./components/booking-progress";
 @import "./components/swiper";
+@import "./components/modal";
 
 // pages
 @import "./layout/index";

@@ -47,16 +47,16 @@ input[type=radio]:checked {
 }
 // 自己嘗試新增height的通用類別
 // 一個檔案只可以有一個key --> "height"，所以要寫在自己的檔案
-$utilities: map-merge(
-    $utilities,
-    (
-        "height": map-merge(
-            map-get($utilities,"height"),(
-                responsive:true,
-                values:(
-                    $imgSizes
-                ),
-            ),
-        ),
-    )
-);
+// $utilities: map-merge(
+//     $utilities,
+//     (
+//         "height": map-merge(
+//             map-get($utilities,"height"),(
+//                 responsive:true,
+//                 values:(
+//                     $imgSizes
+//                 ),
+//             ),
+//         ),
+//     )
+// );
