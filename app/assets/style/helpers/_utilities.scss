@@ -583,8 +583,9 @@ $utilities: map-merge(
     ),
     "rounded-top": (
       property: border-top-left-radius border-top-right-radius,
+      responsive: true,
       class: rounded-top,
-      values: (null: $border-radius)
+      values: (null: $border-radius-16)  //(null: $border-radius)
     ),
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
@@ -598,8 +599,9 @@ $utilities: map-merge(
     ),
     "rounded-start": (
       property: border-bottom-left-radius border-top-left-radius,
+      responsive: true,
       class: rounded-start,
-      values: (null: $border-radius)
+      values: (null: $border-radius-16)  //(null: $border-radius)
     ),
     // scss-docs-end utils-border-radius
     // scss-docs-start utils-visibility

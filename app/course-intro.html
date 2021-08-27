@@ -162,11 +162,14 @@ current: course-intro
 <section class="pt-8 pb-22 pb-md-20 pt-lg-40 pb-lg-28 text-center">
     <div class="container">
         <h2 class="fz-7 mb-12 mb-lg-16 text-primary-dark">師資介紹</h2>
-        <div class="swiper-container course-intro-swiper">
+        <div class="swiper course-intro-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <!-- h-100無效？ -->
-                <div class="card bg-primary-light h-100">
+                <!-- h-100無效？解：把 swiper-slide 的 height 改成 auto 就可以了 -->
+                <!-- 刪 course-img-teacher -->
+                <img src="./assets/images/teacher-1.png" class="card-image m-auto border rounded-pill border-4 border-primary-dark" alt="">
+                <!-- 刪 h-100 -->
+                <div class="card bg-primary-light m--40">
                     <div class="card-body text-white mt-9">
                         <h5 class="fw-normal mb-1">Carol Tang 老師</h5>
                         <p class="mb-4">教學經歷 10 年</p>
@@ -176,12 +179,10 @@ current: course-intro
                             <li>・2010 年完成四年的艾揚格師資培訓</li>
                             <li>・2020 取得艾揚格瑜珈高階認證</li>
                         </ul>
-                        <img src="./assets/images/teacher-1.png" class="course-teacher-img card-image position-absolute top-0 start-50 translate-middle border rounded-pill border-4 border-primary-dark" alt="">
                     </div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <!-- h-100無效？ -->
                 <div class="card bg-primary-light h-100">
                     <div class="card-body text-white mt-9">
                         <h5 class="fw-normal mb-1">Kanae 老師</h5>
@@ -197,7 +198,6 @@ current: course-intro
                 </div>
               </div>
               <div class="swiper-slide">
-                <!-- h-100無效？ -->
                 <div class="card bg-primary-light h-100">
                     <div class="card-body text-white mt-9">
                         <h5 class="fw-normal mb-1">Kuzuha 老師</h5>
@@ -213,7 +213,6 @@ current: course-intro
                 </div>
               </div>
               <div class="swiper-slide">
-                <!-- h-100無效？ -->
                 <div class="card bg-primary-light h-100">
                     <div class="card-body text-white mt-9">
                         <h5 class="fw-normal mb-1">Asa Ifrit 老師</h5>
