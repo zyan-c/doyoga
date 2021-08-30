@@ -30,7 +30,7 @@
 
   <body>
     
-    <nav class="navbar navbar-expand-lg bg-primary py-5">
+    <nav class="navbar navbar-expand-lg bg-primary py-5 fixed-top">
       <div class="container">
         <!-- logo -->
         <a class="navbar-brand" href="./index.html">
@@ -66,6 +66,7 @@
       </div>
     </nav>
     
+    <main>
     
 <section class="hero d-flex align-items-center">
     <div class="container">
@@ -430,8 +431,14 @@
                     </div>
                 </li>
             </ul>
-            <button type="button" class="swiper-button-next d-md-none swiper-button-disabled swiper-button-lock" tabindex="-1" aria-label="undefined" aria-controls="Next slide" aria-disabled="true" disabled=""></button>
-            <button type="button" class="swiper-button-prev d-md-none swiper-button-lock swiper-button-disabled" tabindex="-1" aria-label="undefined" aria-controls="Previous slide" aria-disabled="true" disabled=""></button>
+            <div class="d-flex d-md-none justify-content-between">
+                <a href="#" class="text-secondary swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-b7ee4edefeb02bde" aria-disabled="true">
+                  <span class="material-icons-outlined display-1">west</span>
+                </a>
+                <a href="#" class="text-secondary swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-b7ee4edefeb02bde" aria-disabled="false">
+                  <span class="material-icons-outlined display-1">east</span>
+                </a>
+              </div>
         </div>
     </div>
 </section>
@@ -684,6 +691,7 @@
 </section> -->
 
 
+    </main>
 
     <!-- footer -->
     <footer class="py-8 bg-primary-dark text-white">
