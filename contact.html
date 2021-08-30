@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">  
   </head>
@@ -56,7 +58,7 @@
           </ul>
           <ul class="navbar-nav">
               <li class="me-lg-2">
-                <a class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0 text-primary-dark" href="./booking-option.html">立即預約</a>
+                <a class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0 text-primary-dark" href="./booking-optionv2.html">立即預約</a>
               </li>
               <li>
                 <a class="btn btn-outline-primary-dark rounded-16 w-100 text-primary-dark" href="./contact.html">聯絡我們</a>
@@ -65,6 +67,16 @@
         </div>
       </div>
     </nav>
+
+    <!-- sticky  -->
+    <!-- 多練：end-0 -->
+    <div class="position-fixed top-50 end-0 translate-middle d-none d-lg-block z-index-500">
+      <ul class="d-flex flex-column align-items-center">
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-line"></i></a></li>
+      </ul>
+    </div>
     
     <main>
     <section class="pt-10 pb-12 pt-mb-8 pb-md-10 pt-lg-10 pb-lg-14 text-primary-dark">
@@ -155,6 +167,11 @@
       </div>
     </footer>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

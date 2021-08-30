@@ -1,5 +1,7 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //space-intro.html 課程推薦
 var spaceIntroSwiper = new Swiper(".space-intro-swiper", {
   slidesPerView: 1.5,
@@ -37,6 +39,33 @@ var indexLgCourseSwiper = new Swiper(".index-lg-course-swiper", {
   slidesPerView: 1.2,
   spaceBetween: 30,
   centeredSlides: false
+}); //booking-optionv2 
+
+var bookingOptionSwiper = new Swiper(".booking-option-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grid: {
+    rows: 3,
+    fill: 'column'
+  },
+  breakpoints: {
+    768: _defineProperty({
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
+    }, "spaceBetween", 30),
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      },
+      spaceBetween: 30
+    }
+  }
 }); //index testmonial version3 testing
 
 var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {

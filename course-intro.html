@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">  
   </head>
@@ -56,7 +58,7 @@
           </ul>
           <ul class="navbar-nav">
               <li class="me-lg-2">
-                <a class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0 text-primary-dark" href="./booking-option.html">立即預約</a>
+                <a class="btn btn-outline-primary-dark rounded-16 w-100 mb-2 mb-lg-0 text-primary-dark" href="./booking-optionv2.html">立即預約</a>
               </li>
               <li>
                 <a class="btn btn-outline-primary-dark rounded-16 w-100 text-primary-dark" href="./contact.html">聯絡我們</a>
@@ -65,25 +67,35 @@
         </div>
       </div>
     </nav>
+
+    <!-- sticky  -->
+    <!-- 多練：end-0 -->
+    <div class="position-fixed top-50 end-0 translate-middle d-none d-lg-block z-index-500">
+      <ul class="d-flex flex-column align-items-center">
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" class="text-primary-dark fz-12 lh-1 py-1"><i class="fab fa-line"></i></a></li>
+      </ul>
+    </div>
     
     <main>
     <section class="py-12 pt-mb-16 pb-md-18 py-lg-16 text-primary-dark">
     <div class="container">
         <h2 class="fz-7 mb-6 mb-lg-8 text-center">課程介紹</h2>
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 col-lg-6 offset-lg-1">
+            <div class="col-12 col-md-6 col-lg-6 offset-lg-1" data-aos="fade-right" data-aos-duration="500">
                 <div class="ratio ratio-4x3">
                     <img class="rounded-16" src="./assets/images/teaching.jpeg" alt="teaching">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-5">
-                <h3 class="fz-7 fw-medium mt-2 mb-mt-0">本月限定課程 - 空中瑜珈</h3>
-                <div class="d-flex align-items-center mb-4">
+                <h3 class="fz-7 fw-medium mt-2 mb-mt-0" data-aos="fade-left" data-aos-duration="500">本月限定課程 - 空中瑜珈</h3>
+                <div class="d-flex align-items-center mb-4" data-aos="fade-left" data-aos-duration="1000">
                     <p class="text-primary-light me-2">授課老師：Carol Tang</p>
                     <span class="bg-primary-dark fw-light fz-3-half text-white rounded-16 py-1 px-4">60 min</span>
                 </div>
-                <p class="mb-4">使用掛布懸掛在半空，進行哈達瑜珈體位法練習 藉由地心引力的重力原理 鍛鍊核心肌群，舒緩脊椎壓力 訓練身體協調性，深層放鬆身體 課堂裡老師會視同學狀況安排教導倒立動作 對於不敢嘗試倒立的同學來說 藉由掛布的支持與保護 加上老師細心指導，讓同學能更快掌握</p>
-                <button class="btn btn-lg btn-primary-light"><a class="fz-4" href="./booking-option.html">立即預約</a></button>
+                <p class="mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">使用掛布懸掛在半空，進行哈達瑜珈體位法練習 藉由地心引力的重力原理 鍛鍊核心肌群，舒緩脊椎壓力 訓練身體協調性，深層放鬆身體 課堂裡老師會視同學狀況安排教導倒立動作 對於不敢嘗試倒立的同學來說 藉由掛布的支持與保護 加上老師細心指導，讓同學能更快掌握</p>
+                <button class="btn btn-lg btn-primary-light" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"><a class="fz-4" href="./booking-option.html">立即預約</a></button>
             </div>
         </div>
     </div>
@@ -227,13 +239,13 @@
         <h2 class="fz-7 mb-12 mb-lg-16 text-primary-dark">師資介紹</h2>
         <div class="swiper course-intro-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide h-auto">
                 <!-- h-100無效？解：把 swiper-slide 的 height 改成 auto 就可以了 -->
                 <!-- 刪 course-img-teacher -->
-                <img src="./assets/images/teacher-1.png" class="card-image m-auto border rounded-pill border-4 border-primary-dark" alt="">
+                <img src="./assets/images/teacher-1.png" class="card-image m-auto border rounded-pill border-4 border-primary-light" alt="">
                 <!-- 刪 h-100 -->
                 <div class="card bg-primary-light m--40 z-index-n1">
-                    <div class="card-body text-white mt-9">
+                    <div class="card-body text-white mt-9 h-100">
                         <h5 class="fw-normal mb-1">Carol Tang 老師</h5>
                         <p class="mb-4">教學經歷 10 年</p>
                         <p class="fw-light text-start mb-4">“因為瑜珈讓我重新認識自己的身體，也讓我有了不一樣的人生。 我希望能跟學生們分享瑜珈的好，讓大 家能藉由瑜珈看見自己的內在與潛能， 並將瑜珈自然的融入自己的生活中。”</p>
@@ -245,10 +257,10 @@
                     </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide h-auto">
                 <img src="./assets/images/teacher-2.png" class="card-image m-auto border rounded-pill border-4 border-primary-dark" alt="">
-                <div class="card bg-primary-light m--40 z-index-n1">
-                    <div class="card-body text-white mt-9">
+                <div class="card bg-primary-dark m--40 z-index-n1">
+                    <div class="card-body text-white mt-9 h-100">
                         <h5 class="fw-normal mb-1">Kanae 老師</h5>
                         <p class="mb-4">教學經歷 10 年</p>
                         <p class="fw-light text-start mb-4">“希望每個人透過觀察，感受在在進入動作，連接陰與陽，內和外，呼和吸的方式來更了解瑜珈練習的觀點，每個​動作都帶著呼吸和順位，在平衡心理和生理的狀況下以安全和簡化的技巧進入瑜珈姿勢，帶著放鬆的心情，享受瑜珈和生命的喜悅，並樂在其​中。”</p>
@@ -260,10 +272,10 @@
                     </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/teacher-3.png" class="card-image m-auto border rounded-pill border-4 border-primary-dark" alt="">
+              <div class="swiper-slide h-auto">
+                <img src="./assets/images/teacher-3.png" class="card-image m-auto border rounded-pill border-4 border-primary-light" alt="">
                 <div class="card bg-primary-light m--40 z-index-n1">
-                    <div class="card-body text-white mt-9">
+                    <div class="card-body text-white mt-9 h-100">
                         <h5 class="fw-normal mb-1">Kuzuha 老師</h5>
                         <p class="mb-4">教學經歷 10 年</p>
                         <p class="fw-light text-start mb-4">“瑜珈是一種生活態度，學習平衡不強求，堅持不放棄，修煉心靈活在當下。”</p>
@@ -275,10 +287,10 @@
                     </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide h-auto">
                 <img src="./assets/images/user-5.png" class="card-image m-auto border rounded-pill border-4 border-primary-dark" alt="">
-                <div class="card bg-primary-light m--40 z-index-n1">
-                    <div class="card-body text-white mt-9">
+                <div class="card bg-primary-dark m--40 z-index-n1">
+                    <div class="card-body text-white mt-9 h-100">
                         <h5 class="fw-normal mb-1">Asa Ifrit 老師</h5>
                         <p class="mb-4">教學經歷 10 年</p>
                         <p class="fw-light text-start mb-4">“帶著懵懂和好奇開始了瑜珈的探索。 追隨印度瑜珈大師 Atui Shri 學習呼吸控制和冥想以及完成瑜珈大師宋光明師資培訓。”</p>
@@ -401,6 +413,11 @@
       </div>
     </footer>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
