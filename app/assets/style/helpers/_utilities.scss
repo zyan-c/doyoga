@@ -175,6 +175,22 @@ $utilities: map-merge(
         auto: auto
       )
     ),
+    // 自訂height
+    "heights": (
+      responsive: true,
+      property: height,
+      class: h,
+      values: (
+        "1x": 150px,
+        "2x": 165px,
+        "xl": 195px,
+        "3x": 280px,  //取代252
+        "4x": 323px,
+        "5x": 420px,
+        "lg": 445px,
+      )
+    ),
+    // 自訂height結束
     "max-height": (
       property: max-height,
       class: mh,

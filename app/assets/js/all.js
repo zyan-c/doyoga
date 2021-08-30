@@ -38,6 +38,35 @@ var indexLgCourseSwiper = new Swiper(".index-lg-course-swiper", {
   centeredSlides: false,
 });
 
+//booking-optionv2 
+var bookingOptionSwiper = new Swiper(".booking-option-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,  
+  grid: {
+    rows: 3,
+    fill: 'column',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.1,
+      spaceBetween: 30,
+      grid: {
+        rows: 1,
+        fill: 'row',
+      },
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      grid: {
+        rows: 1,
+        fill: 'row',
+      },
+      spaceBetween: 30,
+    },
+  }
+});
+
 //index testmonial version3 testing
 var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {
   slidesPerView: 1,

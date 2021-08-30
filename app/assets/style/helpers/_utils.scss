@@ -1,15 +1,11 @@
 main{
     margin-top: 80.33px;
 }
-
 .h-25{
     height: 25%;
 }
 .max-height-25{
     max-height: 25%;
-}
-.height-250{
-    height: 250px;
 }
 // form
 .form-check{
@@ -68,4 +64,21 @@ input[type=radio]:checked {
 .img-60{
     width: 60px;
     height: 60px;
+}
+
+.ratio-4x3 {
+    @include media-breakpoint-down(lg) {
+      --bs-aspect-ratio: 50%; // 2x1
+    }
+  }
+
+.ratio-16x9 {
+    // 16x9 ratio 在 lg 版以上變 88%
+    @include media-breakpoint-up(lg) {
+      --bs-aspect-ratio: 88%; // 2x1
+    }
+}
+
+.z-index-500{
+    z-index: 500;
 }
