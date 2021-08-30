@@ -454,6 +454,7 @@ $utilities: map-merge(
         7: $fz-7,            //28px
         8: $fz-8,            //32px
         9: $fz-9,            //36px
+        10: $fz-10,          //40px
         12: $fz-12,          //48px
       )
     ),
@@ -587,6 +588,16 @@ $utilities: map-merge(
       class: rounded-top,
       values: (null: $border-radius-16)  //(null: $border-radius)
     ),
+    //自己嘗試不是 null 的
+    // "rounded-tops": (
+    //   property: border-top-left-radius border-top-right-radius,
+    //   responsive: true,
+    //   class: rounded-top,
+    //   values: (
+        
+    //   )
+    // ),
+   //自己嘗試不是 null 的結束
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
