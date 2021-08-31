@@ -1,32 +1,26 @@
 main{
     margin-top: 80.33px;
 }
-.h-25{
-    height: 25%;
-}
-.max-height-25{
-    max-height: 25%;
-}
+
 // form
 .form-check{
     display: inline-block;
     // margin-right: 32px;
 }
+
 input[type=radio]:checked {
     border: 1px solid $primary-light;
  }
  input[type=checkbox]:checked {
     border: 1px solid $primary-light;
  }
+
 // img
 .object-fit-contain{
     object-fit: contain;
 }
-// 待新增圖片高度 map-merge 後刪除，也從 course-intro 內刪除
-.img-196{
-    height: 196px;
-}
-// google-map
+
+// contact.html google-map
 .map-height{
     height: 360px;
     @include media-breakpoint-down(lg){
@@ -36,49 +30,25 @@ input[type=radio]:checked {
         height: 195px;
     }
 }
-// 自己嘗試新增height的通用類別
-// 一個檔案只可以有一個key --> "height"，所以要寫在自己的檔案
-// $utilities: map-merge(
-//     $utilities,
-//     (
-//         "height": map-merge(
-//             map-get($utilities,"height"),(
-//                 responsive:true,
-//                 values:(
-//                     $imgSizes
-//                 ),
-//             ),
-//         ),
-//     )
-// );
 
 // course-intro.html 師資介紹
+// 待啟用$enable-negative-margins後刪除
 .m--40{
     margin-top: -40px;
 }
+
 .z-index-n1{
     z-index: -1;
 }
 
-// index testimonial 頭像
-.img-60{
-    width: 60px;
-    height: 60px;
-}
-
-.ratio-4x3 {
-    @include media-breakpoint-down(lg) {
-      --bs-aspect-ratio: 50%; // 2x1
-    }
-  }
-
-.ratio-16x9 {
-    // 16x9 ratio 在 lg 版以上變 88%
-    @include media-breakpoint-up(lg) {
-      --bs-aspect-ratio: 88%; // 2x1
-    }
-}
-
 .z-index-500{
     z-index: 500;
+}
+
+.btn-outline-primary-dark:hover{
+    color: $white;
+}
+
+.btn-primary-light:hover{
+    background-color: $primary-dark;
 }
