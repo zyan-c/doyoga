@@ -18475,6 +18475,17 @@ input[type=checkbox]:checked {
 
 .btn-primary-light:hover {
   background-color: #907A7B;
+  border: 1px solid #907A7B;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #C0A4A5;
+  border: 1px solid #C0A4A5;
+}
+
+.btn-primary:hover a {
+  color: #fff;
 }
 
 @media (max-width: 991.98px) {
