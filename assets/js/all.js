@@ -66,12 +66,10 @@ var bookingOptionSwiper = new Swiper(".booking-option-swiper", {
       spaceBetween: 30
     }
   }
-}); //index testmonial version3 testing
+}); //index testmonial version3
 
 var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {
   slidesPerView: 1,
-  //為什麼這裡的 spacebetween 改成 8 就破版（所有斷點的全部li都變成一排 column，間隙寬度也不一） 
-  // 原本以為是控制 li 跟 li 的spacing，看來不是，那要在每個 li 套用 spacing class(md-0)？
   spaceBetween: 0,
   grid: {
     rows: 3,
