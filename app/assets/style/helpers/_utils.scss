@@ -51,4 +51,14 @@ input[type=radio]:checked {
 
 .btn-primary-light:hover{
     background-color: $primary-dark;
+    border: 1px solid $primary-dark;
+    color: $white;
+}
+
+.btn-primary:hover{
+    background-color: $primary-light;
+    border: 1px solid $primary-light;
+    & a {
+        color: $white;
+    }
 }
