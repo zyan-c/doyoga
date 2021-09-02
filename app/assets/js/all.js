@@ -103,6 +103,15 @@ var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {
       },
 });
 
+// datepicker
+const elem = document.querySelector('input[name="datepicker"]');
+const datepicker = new Datepicker(elem, {
+  // 為什麼要加 buttonClass？解：因為這個套件可以使用 BS 的 class：.btn（如果拿掉的話就是最原始 button 樣式）
+  buttonClass: 'btn',
+  nextArrow: '>',
+  prevArrow: '<'
+}); 
+
 // index testimonial version2 testing
 // var testimonialOneSwiper = new Swiper(".testimonial-one-swiper", {
 //   slidesPerView: 1,

@@ -29,5 +29,6 @@
 
 - [Bootstrap5 v5.1.0](https://getbootstrap.com/)
 - [Swiper v7.0.2](https://swiperjs.com/)
-- [AOS v](https://michalsnik.github.io/aos/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [Vanillajs-datepicker](https://mymth.github.io/vanillajs-datepicker/#/)
 - Gulp v4.0.2

@@ -1,0 +1,21 @@
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: $primary-dark;
+  }
+
+.datepicker{
+    color: $primary-dark;
+}
+
+.datepicker-header{
+    background-color: $primary-dark;
+    // color: #ffffff;
+}
+
+.prev-btn, .next-btn, .view-switch{
+    color: $white;
+}
+
+// 如何做出hover時的淺色？還是 .datepicker-cell.selected:hover 就是了？
+// &:hover{
+//     background: shade-color($primary-light, 40%);
+//   }

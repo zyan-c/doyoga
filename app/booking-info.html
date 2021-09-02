@@ -109,7 +109,8 @@ current: booking-info
             <div class="col-12 col-md-6 col-lg-4 mb-8">
                 <p class="mb-4">4. 上課預約報到日</p>
                 <p class="mb-2">若還沒有確定的日期，可以等待專員與您聯絡時再做詳細的諮詢哦！</p>
-                <input type="date" class="form-control">
+                <!-- 用 vanilla js datepicker 的話 input type 要是 text 而不是 date（要加placeholder） -->
+                <input type="text" class="form-control" name="datepicker" placeholder="MM/DD/YYY">
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-8">
                 <p class="mb-4">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
