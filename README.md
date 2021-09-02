@@ -1,6 +1,6 @@
 # RWD線上服務網 - Doyoga 🧘🏾
 
-![image](https://imgur.com/UuNNURv)
+[Imgur](https://imgur.com/UuNNURv)
 
 ## 頁面：
 
