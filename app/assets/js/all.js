@@ -106,7 +106,7 @@ var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {
 // datepicker
 const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {
-  // 為什麼要加 buttonClass？解：因為這個套件可以使用 BS 的 class：.btn（如果拿掉的話就是最原始 button 樣式）
+  // 套用 BS 的 .btn 樣式（拿掉的話就是原始 button 樣式）
   buttonClass: 'btn',
   nextArrow: '>',
   prevArrow: '<'
