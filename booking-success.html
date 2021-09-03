@@ -20,12 +20,14 @@
     <!-- material icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <!-- swiper css -->
+    <!-- swiper css & js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!-- swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- datepicker css & js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">  
   </head>
@@ -43,7 +45,6 @@
           <span class="material-icons">menu</span>
         </button>
         <!-- collapse -->
-        <!-- 第一個ul一定要加 flex-grow-1 和 justify-content-center 才能讓他居中，或是直接寫 mx-auto 也可居中 -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li>
@@ -129,6 +130,18 @@
     <!-- footer -->
     <footer class="py-8 bg-primary-dark text-white">
       <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h3 class="fz-7 fw-medium mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h3>
+          </div>
+          <div class="col-lg-4">
+            <div class="input-group w-md-50 w-lg-auto">
+              <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="input user email" aria-describedby="input user email">
+              <button class="btn btn-primary-light input-group-text">訂閱</button>
+            </div>
+          </div>
+        </div>
+        <!-- draft 版本1
         <div class="d-lg-flex justify-content-between align-items-center">
           <h3 class="fz-7 fw-medium mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</h3>
           <div class="row g-0">
@@ -140,6 +153,7 @@
             </div>
           </div>
         </div>
+        版本1 draft end -->
       </div>
       <hr class="my-8">
       <div class="container mb-md-8">

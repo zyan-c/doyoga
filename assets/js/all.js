@@ -101,6 +101,14 @@ var jsSwiperUserRecommand = new Swiper(".js-swiper-user-recommand", {
       spaceBetween: 30
     }
   }
+}); // datepicker
+
+var elem = document.querySelector('input[name="datepicker"]');
+var datepicker = new Datepicker(elem, {
+  // 套用 BS 的 .btn 樣式（拿掉的話就是原始 button 樣式）
+  buttonClass: 'btn',
+  nextArrow: '>',
+  prevArrow: '<'
 }); // index testimonial version2 testing
 // var testimonialOneSwiper = new Swiper(".testimonial-one-swiper", {
 //   slidesPerView: 1,

@@ -18536,6 +18536,26 @@ input[type=checkbox]:checked {
   opacity: 1;
 }
 
+.card-zoom-hover {
+  -webkit-transition: background-color, 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  transition: background-color, 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  -o-transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+  transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+  transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.card-zoom-hover:hover {
+  background-color: #F5F0E7;
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 5px 5px 30px -15px rgba(12, 5, 62, 0.15);
+          box-shadow: 5px 5px 30px -15px rgba(12, 5, 62, 0.15);
+}
+
 .card.selected {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18661,6 +18681,22 @@ input[type=checkbox]:checked {
   .modal-width {
     max-width: 345px;
   }
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.datepicker {
+  color: #907A7B;
+}
+
+.datepicker-header {
+  background-color: #907A7B;
+}
+
+.prev-btn, .next-btn, .view-switch {
+  color: #fff;
 }
 
 .hero {
