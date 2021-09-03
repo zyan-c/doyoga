@@ -6,7 +6,8 @@
     }
 }
 .card-zoom-hover:hover {
-    background-color: $primary;
+    // bgc不要加在這裡，不然loading時很奇怪，會先load到bg顏色
+    // background-color: $primary;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: scale(1.01);
     box-shadow: 5px 5px 30px -15px rgba(12, 5, 62, 0.15); //0 40px 60px -20px rgba(12, 5, 62, 0.15); 
