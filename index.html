@@ -285,15 +285,16 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-4">
+                <!-- 卡片1 -->
                 <div class="card-zoom-hover rounded-16">
                     <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center overflow-hidden" data-aos="fade-up">
                         <!-- 為什麼 img 加入 height 無效？加入 .h-25 也無效？ 因為base有設定 height：auto，而且 @import 的順序在 utilities 的下面
                             更：可是在 utils 加入 .h-25 .max-height-25 的 class 也無效？命名 utils @import 的順序在 base 下面？ -->
-                        <!-- 更： md 版圖片外層用ratio 16x9 包，lg 版變 4x3 即可 -->
+                        <!-- 更： md 版圖片外層用ratio 16x9 包，lg 版變 4x3 即可(改--bs-aspect-ratio) -->
                         <div class="ratio ratio-16x9">
                             <img src="./assets/images/course4.jpg" class="" alt="option1">
                         </div>
-                        <div class="card-body p-6">
+                        <div class="card-body p-6 card-zoom-hover-bg">
                           <h5 class="card-title fz-5 mb-1 primary-dark">首次體驗</h5>
                           <p class="card-text fz-5 mb-2 text-primary-light">NT $450 / 次</p>
                           <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
@@ -303,28 +304,34 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center overflow-hidden card-zoom-hover" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="ratio ratio-16x9">
-                        <img src="./assets/images/scheme2.jpg" class="" alt="option1">
-                    </div>
-                    <div class="card-body p-6">
-                      <h5 class="card-title fz-5 mb-1 primary-dark">短期體驗</h5>
-                      <p class="card-text fz-5 mb-2 text-primary-light">NT $1800 / 月</p>
-                      <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                      <a href="./booking-optionv2.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
+                <!-- 卡片2 -->
+                <div class="card-zoom-hover rounded-16">
+                    <div class="card flex-md-row flex-lg-column mb-4 mb-md-6 mb-lg-0 text-md-start text-lg-center overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="ratio ratio-16x9">
+                            <img src="./assets/images/scheme2.jpg" class="" alt="option1">
+                        </div>
+                        <div class="card-body p-6 card-zoom-hover-bg">
+                          <h5 class="card-title fz-5 mb-1 primary-dark">短期體驗</h5>
+                          <p class="card-text fz-5 mb-2 text-primary-light">NT $1800 / 月</p>
+                          <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                          <a href="./booking-optionv2.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="card flex-md-row flex-lg-column text-md-start text-lg-center overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="ratio ratio-16x9">
-                        <img src="./assets/images/scheme3.jpg" class="" alt="option1">
-                    </div>
-                    <div class="card-body p-6">
-                      <h5 class="card-title fz-5 mb-1 primary-dark">長期體驗</h5>
-                      <p class="card-text fz-5 mb-2 text-primary-light">NT $5600 / 季</p>
-                      <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
-                      <a href="./booking-optionv2.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
+                <!-- 卡片3 -->
+                <div class="card-zoom-hover rounded-16">
+                    <div class="card flex-md-row flex-lg-column text-md-start text-lg-center overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="ratio ratio-16x9">
+                            <img src="./assets/images/scheme3.jpg" class="" alt="option1">
+                        </div>
+                        <div class="card-body p-6 card-zoom-hover-bg">
+                          <h5 class="card-title fz-5 mb-1 primary-dark">長期體驗</h5>
+                          <p class="card-text fz-5 mb-2 text-primary-light">NT $5600 / 季</p>
+                          <p class="mb-10 text-start">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                          <a href="./booking-optionv2.html" class="btn btn-primary-light w-100 stretched-link">選擇課程</a>
+                        </div>
                     </div>
                 </div>
             </div>

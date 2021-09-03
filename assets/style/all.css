@@ -11143,6 +11143,21 @@ fieldset:disabled .btn {
   .w-sm-auto {
     width: auto !important;
   }
+  .h-sm-25 {
+    height: 25% !important;
+  }
+  .h-sm-50 {
+    height: 50% !important;
+  }
+  .h-sm-75 {
+    height: 75% !important;
+  }
+  .h-sm-100 {
+    height: 100% !important;
+  }
+  .h-sm-auto {
+    height: auto !important;
+  }
   .flex-sm-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -12579,6 +12594,21 @@ fieldset:disabled .btn {
   }
   .w-md-auto {
     width: auto !important;
+  }
+  .h-md-25 {
+    height: 25% !important;
+  }
+  .h-md-50 {
+    height: 50% !important;
+  }
+  .h-md-75 {
+    height: 75% !important;
+  }
+  .h-md-100 {
+    height: 100% !important;
+  }
+  .h-md-auto {
+    height: auto !important;
   }
   .flex-md-fill {
     -webkit-box-flex: 1 !important;
@@ -14017,6 +14047,21 @@ fieldset:disabled .btn {
   .w-lg-auto {
     width: auto !important;
   }
+  .h-lg-25 {
+    height: 25% !important;
+  }
+  .h-lg-50 {
+    height: 50% !important;
+  }
+  .h-lg-75 {
+    height: 75% !important;
+  }
+  .h-lg-100 {
+    height: 100% !important;
+  }
+  .h-lg-auto {
+    height: auto !important;
+  }
   .flex-lg-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -15454,6 +15499,21 @@ fieldset:disabled .btn {
   .w-xl-auto {
     width: auto !important;
   }
+  .h-xl-25 {
+    height: 25% !important;
+  }
+  .h-xl-50 {
+    height: 50% !important;
+  }
+  .h-xl-75 {
+    height: 75% !important;
+  }
+  .h-xl-100 {
+    height: 100% !important;
+  }
+  .h-xl-auto {
+    height: auto !important;
+  }
   .flex-xl-fill {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 1 auto !important;
@@ -16890,6 +16950,21 @@ fieldset:disabled .btn {
   }
   .w-xxl-auto {
     width: auto !important;
+  }
+  .h-xxl-25 {
+    height: 25% !important;
+  }
+  .h-xxl-50 {
+    height: 50% !important;
+  }
+  .h-xxl-75 {
+    height: 75% !important;
+  }
+  .h-xxl-100 {
+    height: 100% !important;
+  }
+  .h-xxl-auto {
+    height: auto !important;
   }
   .flex-xxl-fill {
     -webkit-box-flex: 1 !important;
@@ -18537,11 +18612,18 @@ input[type=checkbox]:checked {
 }
 
 .card-zoom-hover {
-  -webkit-transition: background-color, 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  transition: background-color, 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  -o-transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
-  transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
-  transition: background-color, 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  -webkit-transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  transition: 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  -o-transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.card-zoom-hover-bg:hover {
+  background-color: #F5F0E7;
+  -webkit-transition: ease-in-out;
+  -o-transition: ease-in-out;
+  transition: ease-in-out;
 }
 
 .card-zoom-hover:hover {
