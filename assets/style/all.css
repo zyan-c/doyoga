@@ -18627,7 +18627,6 @@ input[type=checkbox]:checked {
 }
 
 .card-zoom-hover:hover {
-  background-color: #F5F0E7;
   -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
